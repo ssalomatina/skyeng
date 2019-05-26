@@ -1,0 +1,131 @@
+.back{
+	background-color: rgb(133, 165, 212);
+	display: flex;
+	flex-direction:row;
+	flex-wrap:wrap;
+}
+.rate, .rate_modal{
+	background-color: #fff;
+	width: 250px;
+	border-color: #fff;
+	border-radius: 2px;
+	padding: 15px;
+	margin: 10px;
+	cursor: pointer;
+}
+.rate:hover{
+	background-color: rgba(0, 0, 0, 0.1);
+}
+.main{
+	background-color: #fff;
+	border-color: #fff;
+	border-radius: 2px;
+	margin-left: auto;
+    margin-right: auto;
+	margin-top: 100px;
+	box-shadow: 0 8px 8px rgba(0, 0, 0, 0.2);
+}
+.main_unit{
+	display: flex;
+	flex-direction:row;
+	flex-wrap:wrap;
+}
+.name{
+	text-transform: uppercase;
+	font-size: 18px;
+	font-weight: bold;
+	color: rgb(133, 165, 212);
+	letter-spacing: 2px;
+}
+.description{
+	color: rgba(0, 0, 0, 0.3);
+	font-size: 16px;
+}
+.price{
+	color: rgb(133, 165, 212);
+	font-size: 24px;
+}
+.top{
+	font-size: 10px;
+	vertical-align: super;
+}
+.bottom{
+	font-size: 10px;
+}
+.price, .description, .name{
+	font-family: "roboto";
+	text-align: center;
+}
+IMG.img{
+	display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+.button{
+	height: 40px;
+	width: 150px;
+	background-color: #3075f3;
+	border-radius: 2px;
+	border-color: #3075f3;
+	color: #fff;
+	text-align: center;
+	cursor: pointer;
+	font-family: "roboto";
+	font-size: 14px;
+	line-height: 40px;
+	margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 50px;
+}
+.overlay {
+   opacity: 0;
+   visibility: hidden;
+   position: fixed;
+   top: 0;
+   left: 0;
+   width: 100%;
+   height: 100%;
+   background-color: rgba(0, 0, 0, .5);
+   z-index: 20;
+   transition: .3s all;
+}
+
+.modal {
+   opacity: 0;
+   visibility: hidden;
+   width: 100%;
+   max-width: 290px;
+   position: fixed;
+   top: 50%;
+   left: 50%;
+   transform: translate(-50%, -50%);
+   z-index: 30;
+   box-shadow: 0 3px 10px -.5px rgba(0, 0, 0, .2); 
+   text-align: center;
+   padding: 30px;
+   border-radius: 3px;
+   background-color: #fff;
+   transition: 0.3s all;
+}
+
+.modal.active,
+.overlay.active{
+   opacity: 1;
+   visibility: visible;
+}
+
+.modal_cross {
+   width: 15px;
+   height: 15px;
+   position: absolute;
+   top: 20px;
+   right: 20px;
+   fill: #444;
+   cursor: pointer;
+}
+
+@media (max-width: 570px) { 
+	.main_unit{
+		display: block;
+	}
+}
